@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="𝓜𝓻.𝓦𝓮𝓫 𝓭𝓮𝓿 | 2023">
+    <meta name="itemprog" content="𝓜𝓻.𝓦𝓮𝓫 𝓭𝓮𝓿 | 2023">
+    <meta name="og:image" content="https://oltin-raqam.netlify.app/img/random-number.jpg">
+    <title>Oltin raqam</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="shortcut icon" href="./img/favicon1024x1024.svg" type="image/x-icon">
+</head>
+<body id="body" class="bg-slate-300">
+    
+    <!-- Header-container -->
+    <header class="py-5 md:py-7">
+        <!-- Header-container -->
+        <div class="container w-full max-w-6xl px-5 mx-auto">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a class="text-2xl text-yellow-700 font-bold md:text-4xl" href="index.html">Oltin raqam</a>
+                <!-- Refresh-btn -->
+                <button id="refresh" class="cursor-pointer bg-white border border-black px-4 py-1 rounded text-base font-medium text-zinc-900 md:px-4 md:py-2">Yangilash</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <!-- Hero-container -->
+        <div class="container w-full max-w-4xl px-5 mx-auto">
+            <div class="flex flex-col justify-center items-center py-5 md:py-10">
+                <!-- Hero-title -->
+                <h2 class="text-2xl font-semibold mb-6 text-center md:text-4xl">Assalomu Alaykum</h2>
+                <p class="text-center text-sm font-medium sm:text-lg">Oltin raqam o'yiniga hush kelibiz.</p>
+                <p class="text-center text-sm font-medium sm:text-lg">Siz random orqali tanlab olingan 1dan 20gacha bo'lgan sonlar orasidan <strong class="text-yellow-700">oltin</strong> sonni topishingiz kerak.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main class="py-5 mb-20 md:py-10 md:mb-0">
+        <!-- Main-container -->
+        <div class="container w-full max-w-4xl px-5 mx-auto">
+            <div class="flex flex-col-reverse justify-between md:flex-row">
+                <!-- Input -->
+                <div class="w-full max-w-xs flex flex-row items-center mx-auto md:flex-col md:mx-0 md:mr-5">
+                    <input id="input" class="inline-block w-full bg-white border border-black px-4 py-1 rounded mr-4 md:mr-0 md:mb-5 md:p-5" type="number" min="0" max="20" placeholder="Raqam kiriting">
+                    <button id="check" class="cursor-pointer bg-white border border-black px-4 py-1 rounded text-base font-medium text-zinc-900 md:px-4 md:py-2">Tekshirish</button>
+                </div>
+
+                <!-- Result -->
+                <div class="w-full max-w-md flex flex-col items-start space-y-4 mb-14 mx-auto sm:items-center md:mx-0 md:items-end">
+                    <div id="random-number" class="text-center w-40 bg-white border border-black py-4 font-bold text-lg mx-auto md:text-2xl md:mx-0">?</div>
+                    <p class="font-medium text-base">Tahminiy yaqinligi: <span id="guess" class="font-normal">Hali son kiritilgani yo'q</span></p>
+                    <p class="font-medium text-base">Qolgan urinishlar soni: <span id="total" class="font-normal"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
